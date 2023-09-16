@@ -19,10 +19,10 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "whoisbl33h",
-      "template1",
+      "service_euniod1",
+      "template_f1dts1k",
       e.target,
-      "JjC_Nnt4rUsjIsRtz"
+      "SfuXdcB4V-wGIIyyP"
     )
       .then(
         (result) => {
@@ -42,7 +42,7 @@ const ContactForm = () => {
   style={{
     backgroundImage:
       "url(https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png)",
-    width: "80%",
+    width: "100%",
     height: "96%",
     boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
   }}
@@ -50,7 +50,7 @@ const ContactForm = () => {
       <div>
         <h2
           style={{ fontFamily: "Morganite Bold, sans-serif" }}
-          className="message text-7xl bg-primary-600 p-2 rounded-xl text-grayscale-200 text-center rounded-br-[0%] relative shadow-2xl"
+          className="message text-7xl bg-primary-600 p-2 rounded-xl text-grayscale-200 text-center rounded-xl relative"
         >
           <Typewriter words={["Let's get in touch!"]} loop={true} />
           &nbsp;
@@ -70,14 +70,14 @@ const ContactForm = () => {
             <label htmlFor="firstname">First Name</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950"
-              placeholder="Enter your First Name"
+              placeholder="Enter your Name"
               id="firstname"
               type="text"
               name="from_name"
               required
             />
           </div>
-          <div className="w-full flex flex-col">
+          {/*<div className="w-full flex flex-col">
             <label htmlFor="lastname">Last Name</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950"
@@ -87,7 +87,7 @@ const ContactForm = () => {
               name="from_last"
               required
             />
-          </div>
+</div>*/}
           <div className="w-full flex flex-col">
             <label htmlFor="email">E-mail</label>
             <input
@@ -116,6 +116,7 @@ const ContactForm = () => {
               
             />
           </div>
+          <br />
         </form>
       </div>
     </div>
