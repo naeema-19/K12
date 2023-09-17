@@ -40,7 +40,7 @@ const Contact = () => {
         <SocialLinks />
         <div className="bg-primary-700 flex justify-center pb-4 text-grayscale-50">
           <span>
-          Made with ♥ by <em>Naeema Ziyad</em>
+          Made with ♥ by <a href="https://www.linkedin.com/in/naeema-ziyad/" target="_blank"><em>Naeema Ziyad</em></a>
           </span>
         </div>
       </div>
